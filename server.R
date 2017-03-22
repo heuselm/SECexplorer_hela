@@ -41,7 +41,7 @@ shinyServer(function(input, output) {
   output$fcolumnvalues <- renderUI({
     values <- sort(unique(get(input$fcolumn)))
     # values <- values[nchar(values)>0]
-    selectizeInput("fvalue", "Choose Filter Value(s)", values, multiple = FALSE, options = list(maxOptions = 60000), selected = values[2930])
+    selectizeInput("fvalue", "Search or select protein of interest", values, multiple = FALSE, options = list(maxOptions = 60000), selected = values[2930])
   })
   
   ## generate selected protein SEC traces plot
