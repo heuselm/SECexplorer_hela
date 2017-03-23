@@ -119,7 +119,9 @@ shinyServer(function(input, output) {
       p <- p +  theme(legend.position = "none")
     }
     
-    ggplotly(p) 
+    ggplotly(p)
+    dev.off()
+    p
   })
   
   # peptide plot
@@ -158,7 +160,8 @@ shinyServer(function(input, output) {
     }
     
     ggplotly(p)
-    
+    dev.off()
+    p
   })
   
   output$table <- renderDataTable({
