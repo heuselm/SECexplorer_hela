@@ -183,7 +183,7 @@ shinyServer(function(input, output) {
     
     plot_ly(DiffCorrTableAvg, x = ~pearson_cor_avg, y = ~difference_normalized_avg,
                  type = 'scatter', mode = 'markers',  hoverinfo = 'text', alpha = 0.5,
-            color = ~target, colors = c("black", "red"),  symbol = ~target, symbols = c(".", "x"),
+            color = ~target, colors = c("black", "red"),  symbol = ~target, symbols = c("o", "x"),
                  text = ~paste('Uniprot_id: ', protein_id, 
                                '</br> Entry_name: ', Entry_name,
                                '</br> Gene_names: ', Gene_names,
