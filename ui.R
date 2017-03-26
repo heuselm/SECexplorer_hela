@@ -24,7 +24,7 @@ shinyUI(pageWithSidebar(
     selectInput("fcolumn",
                 "Choose Annotation Column for filtering",
                 annotations,
-                selected = "Entry_name"),
+                selected = "Gene_names"),
     
     uiOutput("fcolumnvalues"), #The possible choices of this field are calculated on the server side and passed over by uiOutput
     
